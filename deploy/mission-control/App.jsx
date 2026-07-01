@@ -6,7 +6,7 @@ const loadLS = (k, f) => { try { const v = localStorage.getItem(k); return v ? J
 
 function App() {
   const [agents, setAgents] = useState(() => clone(INITIAL));
-  const [view, setView] = useState('kanban');
+  const [view, setView] = useState('canvas');
   const [selectedId, setSelectedId] = useState(null);
   const [live, setLive] = useState(true);
   const liveRef = useRef(live);
@@ -133,9 +133,9 @@ function App() {
               {live ? 'Live' : 'Paused'}
             </button>
             <div style={{ display: 'inline-flex', background: 'var(--surface-subtle)', borderRadius: 9, padding: 3, gap: 2 }}>
+              <Seg id="canvas" icon="grid" label="Canvas" />
               <Seg id="kanban" icon="columns" label="Kanban" />
               <Seg id="timeline" icon="pulse" label="Timeline" />
-              <Seg id="canvas" icon="grid" label="Canvas" />
             </div>
           </div>
         </div>
