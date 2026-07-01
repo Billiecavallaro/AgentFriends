@@ -1,0 +1,63 @@
+/* ============================================================
+   COLORS — extracted from the Agents product screenshots
+   Warm-neutral gray scale, near-black ink, green activity accent.
+   ============================================================ */
+:root {
+  /* --- Neutral scale (very slightly warm) --- */
+  --gray-0:   #ffffff;
+  --gray-50:  #f7f7f5;  /* page / warm off-white */
+  --gray-100: #f2f2ef;  /* subtle surface fill */
+  --gray-150: #ededea;  /* active nav pill, chip fill */
+  --gray-200: #e6e6e2;  /* hairline-heavy borders */
+  --gray-250: #dcdcd8;
+  --gray-300: #cfcfca;  /* default borders */
+  --gray-400: #a1a19c;  /* disabled text, faint icons */
+  --gray-500: #74746f;  /* secondary / muted text */
+  --gray-600: #55554f;
+  --gray-700: #3b3b36;
+  --gray-800: #262622;
+  --ink:      #191916;  /* primary text + primary buttons */
+
+  /* --- Green activity accent (contribution heatmap) --- */
+  --green-100: #e4efe4;  /* lightest filled cell */
+  --green-200: #bfdcc2;
+  --green-300: #8ec596;
+  --green-400: #57a869;
+  --green-500: #3c8f4e;  /* primary green */
+  --green-600: #2f7340;  /* darkest cell / hover */
+
+  /* --- Purple (merged / status) --- */
+  --purple-100: #ece7f9;
+  --purple-500: #6b4fc4;
+
+  /* --- Blue (informational, sparing) --- */
+  --blue-100: #e4ecfb;
+  --blue-500: #3b6fd4;
+
+  /* ============================================================
+     SEMANTIC ALIASES — reference these in product code
+     ============================================================ */
+  --surface-page:     var(--gray-50);
+  --surface-card:     var(--gray-0);
+  --surface-subtle:   var(--gray-100);
+  --surface-hover:    var(--gray-150);
+  --surface-active:   var(--gray-150);
+
+  --text-primary:     var(--ink);
+  --text-secondary:   var(--gray-600);
+  --text-muted:       var(--gray-500);
+  --text-faint:       var(--gray-400);
+  --text-on-dark:     var(--gray-0);
+
+  --border-subtle:    var(--gray-200);
+  --border-default:   var(--gray-300);
+
+  --accent:           var(--green-500);
+  --accent-strong:    var(--green-600);
+  --accent-soft:      var(--green-100);
+
+  --btn-primary-bg:   var(--ink);
+  --btn-primary-fg:   var(--gray-0);
+  --btn-secondary-bg: var(--gray-0);
+  --btn-secondary-fg: var(--ink);
+}

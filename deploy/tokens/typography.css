@@ -1,0 +1,39 @@
+/* ============================================================
+   TYPOGRAPHY
+   The product UI uses a clean neutral grotesque. The original
+   ships a custom face; Geist (Vercel) is the nearest Google Font
+   match — same low-contrast, humanist-grotesque character.
+   Mono is used for code, model names, and monospace figures.
+   >>> SUBSTITUTION: swap Geist for the real brand font if available.
+   ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;450;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap');
+
+:root {
+  --font-sans: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'Geist Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  /* Type scale (px) — dense product UI, tight steps */
+  --text-xs:   12px;
+  --text-sm:   13px;   /* nav items, secondary labels */
+  --text-base: 14px;   /* body default */
+  --text-md:   15px;
+  --text-lg:   17px;   /* card titles */
+  --text-xl:   20px;
+  --text-2xl:  24px;
+  --text-3xl:  30px;   /* big metric numerals (e.g. "853") */
+  --text-4xl:  40px;   /* marketing hero */
+
+  /* Weights */
+  --weight-normal: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+
+  /* Line heights */
+  --leading-tight: 1.2;
+  --leading-snug:  1.35;
+  --leading-normal: 1.5;
+
+  /* Tracking — hero + display get a hair of negative tracking */
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0;
+}
