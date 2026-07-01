@@ -1,0 +1,5 @@
+/* Design System — global entry point.
+   Consumers link ONLY this file. Keep it as @import lines. */
+@import url("tokens/colors.css");
+@import url("tokens/typography.css");
+@import url("tokens/effects.css");

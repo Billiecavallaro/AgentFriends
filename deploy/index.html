@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agent Friends</title>
+<link rel="icon" type="image/png" href="assets/af-mark.png">
+<link rel="stylesheet" href="styles.css">
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body { font-family: var(--font-sans); background: var(--surface-page); color: var(--text-primary); -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+  button { font-family: var(--font-sans); }
+  ::selection { background: var(--accent-soft); }
+
+  /* thin, quiet scrollbars */
+  *::-webkit-scrollbar { height: 8px; width: 8px; }
+  *::-webkit-scrollbar-thumb { background: var(--gray-250); border-radius: 999px; }
+  *::-webkit-scrollbar-track { background: transparent; }
+
+  @keyframes mcPulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+  @keyframes mcSlide { from { transform: translateX(100%); } to { transform: translateX(0); } }
+  @keyframes mcFade { from { opacity: 0; } to { opacity: 1; } }
+
+  .mc-step:hover .mc-rollback { opacity: 1 !important; }
+
+  /* timeline track: scrollable but no visible scrollbar */
+  .mc-track { scrollbar-width: none; -ms-overflow-style: none; }
+  .mc-track::-webkit-scrollbar { display: none; }
+</style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+  <script src="mission-control/image-slot.js"></script>
+  <script type="text/babel" src="mission-control/data.jsx"></script>
+  <script type="text/babel" src="mission-control/Sparkline.jsx"></script>
+  <script type="text/babel" src="mission-control/KanbanView.jsx"></script>
+  <script type="text/babel" src="mission-control/TimelineView.jsx"></script>
+  <script type="text/babel" src="mission-control/CanvasView.jsx"></script>
+  <script type="text/babel" src="mission-control/DetailDrawer.jsx"></script>
+  <script type="text/babel" src="mission-control/App.jsx"></script>
+</body>
+</html>
